@@ -1,0 +1,20 @@
+<view class="box">
+<view class="containerColumn">
+    <!--标题-->
+    <view class="title">
+        {{chartTitle}}
+    </view>
+    <!-- 分割线 -->
+<view class="divLine"></view>
+    <!--绘制canvas饼图图-->
+    <view class="container">
+        <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+    </view>
+    <button bindtap="btIncome">账单收入查看</button>
+    <button bindtap="btnExpenditure">账单支出查看</button>
+    <button bindtap="btnTimeSchedual">时间管理查看</button>
+</view>
+</view>
+
+
+

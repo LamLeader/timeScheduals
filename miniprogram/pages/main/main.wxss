@@ -1,0 +1,209 @@
+/* pages/home/home.wxss */
+/*查询框框*/
+.serach{
+    border-radius: 12px;
+    border:  1px solid pink;
+    border-right: 1px;
+    height: 30px;
+    width: 100%;
+    flex-direction: row;
+}
+.input{
+    border-radius: 0px;
+    
+    height: 30px;
+    width: 71%;
+    border-right: solid 1px pink;
+    float: left;
+}
+.btnSearch{
+  /*边界角的弧度*/
+  border-radius: 0px;
+  height: 30px;
+  width: 28%;
+  float: left;
+  border-left: 1px solid pink;
+  background-color: pink;
+}
+.icon{
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+}
+.labelQuery{
+    position: absolute;
+    left: 28px;
+    bottom: -8px;
+    color: white;
+}
+/*轮播图*/
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+
+.slide-image{  
+    width: 100%;  
+} 
+/*中间部分*/
+.boxView{
+   height: 100%;
+   width:100%;
+   /*边界角的弧度*/
+   margin-top: 0px;
+}
+.center{
+   height: 48%;
+   width: 100%;
+   border-radius: 0px;
+   border:  0px solid pink;
+   padding: 0px;
+   
+}
+/*底部*/
+.foot{
+   height: 20%;
+   width: 100%;
+   border-radius: 10px;
+   border:  0px solid pink;
+   
+}
+/*就宫格菜单*/
+.weui-grids {
+    position: relative;
+    overflow: hidden;
+}
+ 
+ .weui-grids:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+} 
+ 
+ .weui-grids:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+} 
+ 
+ 
+ 
+.weui-grid {
+    position: relative;
+    float: left;
+    padding: 20px 10px;
+    width: 33.33333333%;
+    box-sizing: border-box;
+}
+ 
+ .weui-grid:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-right: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+} 
+ 
+ .weui-grid:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+} 
+ 
+  .weui-grid:active {
+    background-color: #ECECEC;
+}  
+ 
+.weui-grid__bg {
+    position: relative;
+    float: left;
+    padding: 0px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+ 
+.weui-grid__icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+ 
+ 
+.weui-grid__icon image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ 
+.weui-grid__icon + .weui-grid__label {
+    margin-top: 5px;
+}
+ 
+ 
+.weui-grid__label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.van_panel_accout{
+    background-color:#00BFFF;
+}
+.showcurrentDate{
+   margin-top: 20rpx;
+}
+.searchDateBtn{
+   background-color:#00BFFF;
+   color: white;
+   border-radius: 98rpx;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+.income{
+  box-sizing:border-box;
+   margin-left: 300rpx;
+
+}
+  

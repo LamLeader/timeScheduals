@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarBackgroundColor": "#00BFFF",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "收入添加/修改",
+  "usingComponents": {}
+}

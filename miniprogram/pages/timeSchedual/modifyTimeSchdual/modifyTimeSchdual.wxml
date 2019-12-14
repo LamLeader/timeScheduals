@@ -1,0 +1,38 @@
+<!--pages/set/set.wxml-->
+
+<view class='container'>
+     <form bindsubmit='comfirm' >
+       <input style='display:none' data-value='{{id}}'  name="id" value='{{timeSchedual._id}}'></input>
+        
+          类型=><van-radio-group  value="{{radio}}"  name="radio"  data-value="{{ radio }}" bind:change="chooseRadio">
+            <van-radio name="学习">学习</van-radio>
+            <van-radio name="工作">工作</van-radio>
+            <van-radio name="娱乐">娱乐</van-radio>
+            <van-radio name="休息">休息</van-radio>
+            <van-radio name="其他">其他</van-radio>
+          </van-radio-group>  
+          占用时间:
+           {{h}}:小时 ,分钟:{{m}} ,秒:{{s}}
+          <view  wx:if="{{timeShow}}">
+              <text class="item">{{hours}}</text>
+              <text class="item">:{{minute}}</text>
+              <text class="item">:{{second}}</text>
+          </view>
+          <van-row>
+              <van-col span="24">开始时间：{{beginTime}}</van-col>
+          </van-row>
+          <van-row>
+              <van-col span="24">结束时间：{{endTime}}</van-col>
+          </van-row>
+          
+          <van-grid clickable column-num="3">
+            <van-grid-item text="开始" icon="play-circle-o" bindclick="start" />
+            <van-grid-item text="停止" icon="pause-circle-o" bindclick="pause" />
+            <van-grid-item text="重置" icon="replay" bindclick="reset" />
+          </van-grid>
+          <button form-type='submit' class='btn btn-primary login-btn' class="btn1" >
+                 提交
+          </button>
+    </form> 
+    
+</view>

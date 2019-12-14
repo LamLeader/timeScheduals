@@ -1,0 +1,38 @@
+<view class="bg">
+  <view class="head">
+    <view class="headIcon">
+      <image src="{{headImg}}" ></image>
+    </view>
+  </view>
+ 
+</view>
+<view class="line"></view>
+<view class="hr"></view>
+<view class='item' bindtap="loginOut">
+  <view class="title">退出登录</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item" bindtap="myCollection">
+  <view class="title">我的收藏</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item" bindtap="myComment">
+  <view class="title">我的评论</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item">
+  <view class="title">系统设置</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="hr"></view>

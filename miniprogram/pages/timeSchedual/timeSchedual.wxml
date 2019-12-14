@@ -1,0 +1,31 @@
+<!--pages/index/index.wxml-->
+<van-row wx:if="{{timeSchedual}}">
+  <van-col span="24">
+      <block wx:for="{{timeSchedual}}" wx:key="">
+          <van-panel title="{{item.timesExpenditure}}" desc="" status="{{item.timesSelect}}" use-footer-slot>
+            <view>
+                <van-cell-group>
+                    <van-cell title="{{item.userName}}" value="" label="{{item.ceateTime}}" border="{{ false }}" />
+                </van-cell-group>
+            </view>
+            <view class="btnView">
+                        <button type="swi"  data-id='{{item._id}}' bindtap='onDel' hover-class="other-button-hover">删除</button>
+                        <button type="swi"   data-id='{{item._id}}' bindtap='onUpdate' hover-class="other-button-hover">修改</button>
+            </view>
+           </van-panel>
+            
+      </block>
+  </van-col>
+</van-row>
+             
+<view wx:else="{{timeSchedual}}" class='none'>
+      <text >暂时没有数据！</text>
+</view>
+ <!--圆形点击框  -->
+<view class="btnAddView">
+        <button type="swi" bindtap="returnBack" hover-class="other-button-hover">返回</button>
+</view>
+ <!--圆形点击框  -->
+<view class="btnAddView1">
+       <button   bindtap='goSet' hover-class="other-button-hover">添加</button>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/set/set.wxml-->
+<view class='container'>
+      <form bindsubmit='comfirm' >
+       <input style='display:none' data-value='{{id}}'  name="id" value='{{accountBoot._id}}'></input>
+        <van-cell-group>
+          <van-field
+            value="{{accountBoot.price}}"
+            data-value='{{price}}'
+            name="price"
+            required
+            clearable
+            label="支出"
+            icon="question-o"
+            placeholder="请输入支出"
+            bind:click-icon="onClickIcon"
+            bind:change="inputPrice"
+          />
+         </van-cell-group>
+         <br/>
+         <van-cell-group>
+            <van-field
+              value="{{accountBoot.des}}"  data-value='{{des}}'
+              label="描述"
+              name="des"
+              type="textarea"
+              placeholder="请输入描述"
+              autosize
+              border="{{ false }}"  bind:change="inputDes"
+            />
+          </van-cell-group>
+          类型=》<van-radio-group  value="{{radio}}"  name="radio"  data-value="{{ radio }}" bind:change="chooseRadio">
+            <van-radio name="日用">日用</van-radio>
+            <van-radio name="学习">学习</van-radio>
+            <van-radio name="美容">美容</van-radio>
+            <van-radio name="运动">运动</van-radio>
+            <van-radio name="社交">社交</van-radio>
+            <van-radio name="娱乐">娱乐</van-radio>
+            <van-radio name="医疗">医疗</van-radio>
+            <van-radio name="餐饮">餐饮</van-radio>
+            <van-radio name="购物">购物</van-radio>
+            <van-radio name="交通">交通</van-radio>
+            <van-radio name="通讯">通讯</van-radio>
+            <van-radio name="其他">其他</van-radio>
+          </van-radio-group>
+         <button form-type='submit' class='btn btn-primary login-btn' class="btn1" >
+                 提交
+         </button>
+
+          
+    </form>
+
+  
+
+
+
+</view>

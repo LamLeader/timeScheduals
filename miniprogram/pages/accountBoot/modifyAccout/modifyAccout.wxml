@@ -1,0 +1,51 @@
+<!--pages/set/set.wxml-->
+<view class='container'>
+      <form bindsubmit='comfirm' >
+       <input style='display:none' data-value='{{id}}'  name="id" value='{{accountBoot._id}}'></input>
+        <van-cell-group>
+          <van-field
+            value="{{accountBoot.price}}"
+            data-value='{{price}}'
+            name="price"
+            required
+            clearable
+            label="收入"
+            icon="question-o"
+            placeholder="请输入收入"
+            bind:click-icon="onClickIcon"
+            bind:change="inputPrice"
+          />
+         </van-cell-group>
+         <br/>
+         <van-cell-group>
+            <van-field
+              value="{{accountBoot.des}}"  data-value='{{des}}'
+              label="描述"
+              name="des"
+              type="textarea"
+              placeholder="请输入描述"
+              autosize
+              border="{{ false }}"  bind:change="inputDes"
+            />
+          </van-cell-group>
+          类型=》<van-radio-group  value="{{radio}}"  name="radio"  data-value="{{ radio }}" bind:change="chooseRadio">
+            <van-radio name="工资">工资</van-radio>
+            <van-radio name="兼职">兼职</van-radio>
+            <van-radio name="理财">理财</van-radio>
+            <van-radio name="礼金">礼金</van-radio>
+            <van-radio name="其他">其他</van-radio>
+          </van-radio-group>
+
+          <button form-type='submit' class='btn btn-primary login-btn' class="btn1" >
+                 提交
+          </button>
+         
+
+          
+    </form>
+
+  
+
+
+
+</view>

@@ -1,0 +1,14 @@
+<view class="login-body" id="{{theme}}">
+  <view class="login">
+    <view class='public-list'>
+      <view class='public-header mp-info'>
+        <image src="https://images.vrm.cn/2019/07/05/at-icon.png" class='icon'></image>
+        <text class='mp-name'>柠檬算账</text>
+      </view>
+      <button class='btn btn-primary login-btn' class="btn1" open-type='getUserInfo' bindgetuserinfo="onGotUserInfo">
+        确认登录
+      </button>
+    </view>
+  </view>
+</view>
+<van-notify id="login-tips" />

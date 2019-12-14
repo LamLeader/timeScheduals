@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/timeSchedual/timeSchedual",
+    "pages/timeSchedual/modifyTimeSchdual/modifyTimeSchdual",
+    "pages/report/report",
+    "pages/accountBoot/accountBoot",
+    "pages/accountBoot/modifyAccout/modifyAccout",
+    "pages/userInfo/userInfo",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/myself/myself",
+    "pages/billexpenditure/billexpenditure",
+    "pages/billexpenditure/modifyexpenditure/modifyexpenditure"
+    
+   
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "记账",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#666666",
+    "selectedColor": "#00BFFF",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "iconPath": "images/zhangdan.png",
+        "selectedIconPath": "images/zhangdan1.png",
+        "text": "明细",
+        "pagePath": "pages/main/main"
+      },
+      {
+        "iconPath": "images/5acd66b592f65.png",
+        "selectedIconPath": "images/personallight.png",
+        "text": "个人中心",
+        "pagePath": "pages/myself/myself"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 15000,
+    "connectSocket": 30000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "usingComponents": {
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+    "van-dialog": "../../miniprogram_npm/vant-weapp/dialog/index",
+    "van-collapse": "../../miniprogram_npm/vant-weapp/collapse/index",
+    "van-collapse-item": "../../miniprogram_npm/vant-weapp/collapse-item/index",
+    "van-datetime-picker": "../../miniprogram_npm/vant-weapp/datetime-picker/index",
+    "van-card": "../../miniprogram_npm/vant-weapp/card/index",
+    "van-row": "../../miniprogram_npm/vant-weapp/row/index",
+    "van-col": "../../miniprogram_npm/vant-weapp/col/index",
+    "van-panel": "../../miniprogram_npm/@vant/weapp/panel/index",
+    "van-notify": "../../miniprogram_npm/vant-weapp/notify/index",
+    "van-field": "../../miniprogram_npm/vant-weapp/field/index",
+    "van-radio": "../../miniprogram_npm/vant-weapp/radio/index",
+    "van-radio-group": "../../miniprogram_npm/vant-weapp/radio-group/index",
+    "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
+    "van-cell-group": "../../miniprogram_npm/vant-weapp/cell-group/index",
+    "van-count-down": "../../miniprogram_npm/@vant/weapp/count-down/index",
+    "van-grid": "../../miniprogram_npm/@vant/weapp/grid/index",
+    "van-grid-item": "../../miniprogram_npm/@vant/weapp/grid-item/index",
+    "van-toast": "../../miniprogram_npm/@vant/weapp/toast/index"
+    
+  }
+}

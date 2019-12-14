@@ -1,0 +1,40 @@
+<van-panel title="本月支出" desc="账单明细" status="账单" class="van_panel_accout">
+  <view>
+  <van-dialog
+  use-slot
+  title="标题"
+  show="{{ show }}"
+  show-cancel-button
+  confirm-button-open-type="chooseDate"
+  bind:close="onClose"
+  bind:getuserinfo="chooseDate"
+>
+ <van-datetime-picker
+  type="year-month"
+  value="{{ currentDate }}"
+  min-date="{{ minDate }}"
+  bind:input="onInput"
+ />
+</van-dialog>
+      <van-row>
+        <van-col span="10"  class="showcurrentDate" >{{currentDate1}}</van-col>
+        <van-col span="14"><button  bindtap="searchAccout" class="searchDateBtn">查询</button></van-col>
+      </van-row>
+      <van-row  class="income">
+          <van-col span="10">收入：{{totalIncome}}</van-col>
+          <van-col span="12">支出：{{totalExpenditure}}</van-col>
+      </van-row>
+  </view>
+</van-panel>
+<view class="weui-grids">
+        <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+            <navigator url="{{item.url+'?name='+item.name+'&code='+item.code}}">
+                <view class='weui-grid__bg'>
+                    <view class="weui-grid__icon">
+                        <image src="{{item.icon}}" mode="scaleToFill" />
+                    </view>
+                     <text class="weui-grid__label">{{item.name}}</text>
+                </view>
+            </navigator>
+        </view>
+</view>
