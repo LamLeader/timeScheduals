@@ -9,67 +9,8 @@ Page({
    */
   data: {
     accountBoot: [],
-    activeNames: ['1'],
-    scrollHeight: 0,      //页面高度
-    currentID: 7,         //新闻类型
-    TianAPInewsList: [],  //默认数据列表
-    scrollTop: 0,         //Y轴滚动条位置
-    touchXStart: 0,       //X轴开始位置
-    touchYStart: 0,       //Y轴开始位置
-    currentPage: 1,        //默认页数
-    newsVlues: "",
-    currentDate:''//首页查询时间
-    
   },
-  //初始化数据
-  initNewsData: function () {
-    this.setData({
-      scrollTop: 0,
-      TianAPInewsList: [],
-      currentPage: 1,
-      scrollHeight: 0
-    });
-  },
-  //获取最新数据
-  refreshNewList: function (e) {
-    this.initNewsData();
-    //this.loadNewslList(this.data.currentID);
-  },
-  //加载更多新闻数据
-  loadMoreNews: function (e) {
-    this.setData({ currentPage: this.data.currentPage + 1 });
-    //this.loadNewslList(this.data.currentID);
-  },
-  //设置当前Y轴滚动条位置
-  setCurrentYScroll: function (event) {
-    this.setData({
-      scrollTop: event.detail.scrollTop
-    });
-  },
- 
-  //X,Y开始位置
-  handerTouchStart: function (e) {
-    let temp = [];
-    this.setData({ touchXStart: e.changedTouches[0].clientX, touchYStart: e.changedTouches[0].clientY });
-  },
-  //点击列表跳转
-  handerNavigator: function (e) {
-    var url = e.currentTarget.dataset.url    // 新闻url 
-    wx.navigateTo({
-      url: '/pages/view/view?url=' + url
-    });
-  },
-  //获取用户信息
-  getUserInfo(event) {
-    var that = this;
-    console.log(event.detail);
-    console.log("avatarUrl:" + event.detail.userInfo.avatarUrl);
 
-    that.setData({
-      avatarUrl: event.detail.userInfo.avatarUrl,
-    });
-  },
-   
   /**
    * 生命周期函数--监听页面加载
    */

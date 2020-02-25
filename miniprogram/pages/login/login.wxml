@@ -3,7 +3,7 @@
     <view class='public-list'>
       <view class='public-header mp-info'>
         <image src="https://images.vrm.cn/2019/07/05/at-icon.png" class='icon'></image>
-        <text class='mp-name'>柠檬算账</text>
+        <text class='mp-name'>xxx记账</text>
       </view>
       <button class='btn btn-primary login-btn' class="btn1" open-type='getUserInfo' bindgetuserinfo="onGotUserInfo">
         确认登录

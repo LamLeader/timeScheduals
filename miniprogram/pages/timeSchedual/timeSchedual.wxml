@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 <van-row wx:if="{{timeSchedual}}">
   <van-col span="24">
-      <block wx:for="{{timeSchedual}}" wx:key="">
+      <block wx:for="{{timeSchedual}}" wx:key="item">
           <van-panel title="{{item.timesExpenditure}}" desc="" status="{{item.timesSelect}}" use-footer-slot>
             <view>
                 <van-cell-group>

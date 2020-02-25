@@ -15,15 +15,15 @@
   </view>
 </view>
 <view class="line"></view>
-<view class="item" bindtap="myCollection">
+<view class="item" >
   <view class="title">我的收藏</view>
   <view class="detail2">
     <text> ></text>
   </view>
 </view>
 <view class="line"></view>
-<view class="item" bindtap="myComment">
-  <view class="title">我的评论</view>
+<view class="item" bindtap="myShare">
+  <view class="title">我要分享</view>
   <view class="detail2">
     <text> ></text>
   </view>

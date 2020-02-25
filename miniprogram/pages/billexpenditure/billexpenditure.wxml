@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 <van-row wx:if="{{accountBoot}}">
   <van-col span="24">
-      <block wx:for="{{accountBoot}}" wx:key="">
+      <block wx:for="{{accountBoot}}" wx:key="item">
           <van-cell-group>
                 <van-cell title="{{item.accoutType}}" value="{{item.price}}" />
                 <van-cell title="{{item.userName}}" value="{{item.des}}" label="{{item.ceateTime}}" border="{{ false }}" />

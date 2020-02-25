@@ -19,7 +19,7 @@ Page({
 
   //退出登录
   loginOut: function (evet) {
-    wx.showLoading({ title: '数据请求中...', icon: 'loading', duration: 10000 });//显示请求框
+    wx.showLoading({ title: '数据请求中...', icon: 'loading', duration: 1000 });//显示请求框
     wx.showModal({
       title: '退出登录',
       content: '确定要退出登录吗？',
@@ -35,17 +35,11 @@ Page({
       }
     })
   },
-  //我的收藏
-  myCollection: function () {
-    console.log("++++++++++++======myCollection=====+++++++++++++");
+  //我要分享
+  myShare: function () {
+    console.log("++++++++++++======myShare=====+++++++++++++");
     wx.navigateTo({
-      url: '../../../../myCollection/myCollection',
-    })
-  },
-  //我的评论
-  myComment: function () {
-    wx.navigateTo({
-      url: '../../../../leavecomment/commentsList/commentsList',
+      url: '../../../../myself/canvas/canvas',
     })
   }
 

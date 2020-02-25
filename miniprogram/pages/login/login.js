@@ -40,7 +40,7 @@ Page({
       })
       //设置缓存
       wx.setStorageSync("userInfo", userInfo);
-
+      //console.log("userInfo.avatarUrl:" + userInfo.avatarUrl);
       wx.switchTab({
         url: '/pages/main/main',
       })

@@ -10,7 +10,7 @@ Page({
   data: {
     accountBoot: [],
     radio: '学习'
-  },
+  },                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
   //收入类别
   inputPrice: function (event) {
     console.log(event.detail);

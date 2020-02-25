@@ -134,7 +134,7 @@ Page({
     var that = this;
     var timesSelect = that.data.radio;
     var nickName = userInfo.nickName;
-    var timesExpenditure =that.data.h + ":小时," + that.data.m + ":分钟," + that.data.s +":秒"
+    var timesExpenditure =that.data.h + ":小时," + that.data.m + ":分钟," + that.data.s +":秒";
     db.collection("timeSchedual").add({
       data: {
         userName: nickName,
@@ -142,7 +142,8 @@ Page({
         ceateTime: time.formatTime(date),
         timesExpenditure: timesExpenditure,
         queryByDate: time.formatTimeYMD(date),
-        timlTotal: that.data.s
+        timlTotal: that.data.s,
+        queryCreateTime: time.formatTimeYMDay(date)
       }, success: res => {
         wx.showToast({
           title: '新增记录成功',

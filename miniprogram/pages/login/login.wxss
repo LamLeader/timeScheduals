@@ -31,10 +31,10 @@
   font-size:30rpx;
   margin:50rpx 0 20rpx;
 }
-.tips-item {
+/* .tips-item {
   font-size:27rpx;
   color:grey;
-}
+} */
 .login-btn {
   margin: 70rpx 0;
 }

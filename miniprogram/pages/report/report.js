@@ -12,7 +12,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    chartTitle: '收|支数据',
+    chartTitle: '',
     isMainChartDisplay: true,
     name:[],
     score:[],
@@ -47,17 +47,17 @@ hideLoading:function () {
     })
   },
   //点击
-  touchHandler: function (e) {
-    console.log(pieChart.getCurrentDataIndex(e));
-  },        
+  // touchHandler: function (e) {
+  //   console.log(pieChart.getCurrentDataIndex(e));
+  // },        
   /**
    * 生命周期函数--监听页面加载(页面加载完成 且只加载一次)
    */
   onLoad: function (options) {
     var that=this;
     that.getSysCurrentDate();//取出系统当前
-    that.totalIncome();//调用收入统计方法
-    that.totalExpenditure();//调用支出统计方法
+    //that.totalIncome();//调用收入统计方法
+    //that.totalExpenditure();//调用支出统计方法
   },
   //同步取出 获取缓存 当前的查询时间
   getSysCurrentDate: function () {
@@ -94,7 +94,7 @@ hideLoading:function () {
         if (currentDate) {
           that.totalIncome();//调用收入统计方法
 
-          that.init_pieCharts();//初始化饼图图表
+          //that.init_pieCharts();//初始化饼图图表
         }
 
       } catch (e) {
@@ -112,7 +112,7 @@ hideLoading:function () {
       if (currentDate) {
         that.totalExpenditure();//调用支出统计方法
 
-        that.init_pieCharts();//初始化饼图图表 
+        //that.init_pieCharts();//初始化饼图图表 
       }
 
     } catch (e) {
@@ -130,7 +130,7 @@ hideLoading:function () {
       if (currentDate) {
         that.totalTimeSchedual();//调用支出统计方法
 
-        that.init_pieCharts();//初始化饼图图表 
+        //that.init_pieCharts();//初始化饼图图表 
       }
 
     } catch (e) {
@@ -160,6 +160,7 @@ hideLoading:function () {
               chartTitle:'收入账单数据查看'
             });
         }
+        that.init_pieCharts();//初始化饼图图表
         for (var index in that.data.series) {
           console.log("price:" + that.data.series[index].data);
         }
@@ -198,7 +199,9 @@ hideLoading:function () {
             series: arrData,
             chartTitle: '支出账单数据查看'
           });
+          //console.log(arrData);
         }
+        that.init_pieCharts();
         for (var index in that.data.series) {
           console.log("totalExpenditureprice:" + that.data.series[index].data);
         }
@@ -237,6 +240,7 @@ hideLoading:function () {
             chartTitle: '时间管理数据查看'
           });
         }
+        that.init_pieCharts();//初始化饼图图表 
         for (var index in that.data.series) {
           console.log("totalTimeSchedual:" + that.data.series[index].data);
         }
